@@ -156,12 +156,12 @@ Not applying OCP leads to rigidity.  Good OCP is where we add new code, not chan
 
 Before….				            And with the refactoring….
 
-<screenshot>
+'<screenshot>'
 
 
 In this shape-drawing example, imagine to begin with we only cater for squares and circles.  If we want to add triangles we need to modify existing code to include a triangle in both drawing and decision logic.  To solve this, encapsulate the concept that varies, put an abstract draw method in a shape interface, and pass objects of type ShapeType into the relevant draw method in DrawingTool.  Then we can add more shapes easily.
 
-<screenshot>
+'<screenshot>'
 
 LSP – Liskov Substitution Principle
 -----------------------------------
@@ -185,11 +185,11 @@ ISP – Interface Segregation Principle
 -------------------------------------
 Clients should not be forced to depend on methods they do not use, as they are then subject to changes to those methods.  To avoid such couplings, we want to separate cohesive interfaces, instead of one fat interface.
 
-<screenshot>
+'<screenshot>'
 
 Recall the ATM system example from earlier.  Here is a before, and after refactoring…
 
-<screenshot>
+'<screenshot>'
  
 DIP – Dependency Inversion Principle
 ------------------------------------
@@ -197,8 +197,8 @@ High-level modules should not depend on low-level modules, both should depend on
 
 Before…
 
-<screenshot>
+'<screenshot>'
 
 And after refactoring…
 
-<screenshot>
+'<screenshot>'
