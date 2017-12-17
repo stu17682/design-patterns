@@ -79,7 +79,7 @@ Design patterns are comprised of main three types - creational, structural and b
 Creational patterns provide approaches to object instantiation i.e. creation.  Where you place the ‘new’ keyword in your Java code will affect how tightly or loosely coupled your classes are.  There are five creational patterns:
 
 1.  Abstract Factory – provides an interface for creating families of related/dependant objects without specifying their concrete class.
-2.  Singleton – ensures a class has only one instance and provides a global point of access to it.  For the security aware amongst you, this is global point of access can spark some debate.  Though I am not going to get into that in this series.
+2.  Singleton – ensures a class has only one instance and provides a global point of access to it.  For the security aware amongst you, this global point of access can spark some debate.  Though I am not going to get into that in this series.
 3. Prototype – specifies the kind of objects to create using a prototypical interface, and creates new objects by copying it.
 4. Factory Method – creates objects without specifying the exact class of object that will be created.
 5. Builder – separates the construction steps of a complex object from its representation.
