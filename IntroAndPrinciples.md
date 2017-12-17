@@ -191,7 +191,6 @@ Recall the ATM system example from earlier.  Here is a before, and after refacto
 
 <screenshot>
  
- 
 DIP – Dependency Inversion Principle
 ------------------------------------
 High-level modules should not depend on low-level modules, both should depend on abstractions.  And abstractions should not depend on details, details should depend on abstractions.  Instead, invert and provide abstract interfaces so there are no dependencies between high and low-level modules.
@@ -203,7 +202,3 @@ Before…
 And after refactoring…
 
 <screenshot>
-
-
-
-
