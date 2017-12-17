@@ -19,7 +19,7 @@ Design patterns centre on the combination of four OO concepts – abstraction, e
 
 Polymorphism
 ------------
-This is the ability of an object reference to refer to objects of different forms.  Binding is evaluated at run-time rather than at compile-time.  Binding is the process of connecting a message with a receiving method, I’ll talk about this very shortly.
+This is the ability of an object reference to refer to objects of different forms.  Binding is evaluated at run-time rather than at compile-time, and is the process of connecting a message with a receiving method, I’ll talk about this very shortly.
 
 Advantages of polymorphic languages:
 1.  Flexibility – they can be type checked while being flexible.
