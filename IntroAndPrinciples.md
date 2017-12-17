@@ -138,7 +138,7 @@ SRP – Single Responsibility Principle
 -------------------------------------
 Not applying SRP leads to rigidity and fragility.  Below, the Rectangle class has two responsibilities, or two reasons to change – remember it should only have one.
 
-<screenshot>
+`<screenshot>`
 
 And, in an unrelated code example, the Modem interface has two responsibilities also, again it should only have one.
 
@@ -156,18 +156,18 @@ Not applying OCP leads to rigidity.  Good OCP is where we add new code, not chan
 
 Before….				            And with the refactoring….
 
-'<screenshot>'
+`<screenshot>`
 
 
 In this shape-drawing example, imagine to begin with we only cater for squares and circles.  If we want to add triangles we need to modify existing code to include a triangle in both drawing and decision logic.  To solve this, encapsulate the concept that varies, put an abstract draw method in a shape interface, and pass objects of type ShapeType into the relevant draw method in DrawingTool.  Then we can add more shapes easily.
 
-'<screenshot>'
+`<screenshot>`
 
 LSP – Liskov Substitution Principle
 -----------------------------------
 Not applying LSP leads to rigidity.  A useful heuristic is factoring instead of deriving, meaning, as we’ve discussed plenty of times so far, factoring out common behaviour as an abstraction/interface.  Remember subtypes must be substitutable for their base types.  
 
-public class DrawingTool {
+`public class DrawingTool {
   public void drawShape(Shape s) {
     if (s.type == ShapeType.CIRCLE) {
       System.out.println("I'm drawing a circle");
@@ -177,7 +177,7 @@ public class DrawingTool {
       System.out.println("It’s not a square or a circle - what do I do?");
       }
   }
-} 
+}`
 
 Above, future types of Shape have to be handled.  However, the if statement indicates that we have to determine which subclass has been passed in i.e. they are not substitutable, breaking LSP.  And what if we need a triangle?
 
@@ -185,11 +185,11 @@ ISP – Interface Segregation Principle
 -------------------------------------
 Clients should not be forced to depend on methods they do not use, as they are then subject to changes to those methods.  To avoid such couplings, we want to separate cohesive interfaces, instead of one fat interface.
 
-'<screenshot>'
+`<screenshot>`
 
 Recall the ATM system example from earlier.  Here is a before, and after refactoring…
 
-'<screenshot>'
+`<screenshot>`
  
 DIP – Dependency Inversion Principle
 ------------------------------------
@@ -197,8 +197,8 @@ High-level modules should not depend on low-level modules, both should depend on
 
 Before…
 
-'<screenshot>'
+`<screenshot>`
 
 And after refactoring…
 
-'<screenshot>'
+`<screenshot>`
