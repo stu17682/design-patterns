@@ -5,8 +5,17 @@ Intro
 -----
 Welcome along!  Thanks for checking this out.  Firstly, a few points 1) before I go near any code, I’ll be describing the thinking behind all this.  Do read through it all properly.  2)  The code will be on the Java tip.  I’ve coded substantially in C++ too but there is no support for, say, interfaces.  So, it hard to port all these design patterns exactly from language to language with ease.  2) a nice book is “Java Design Patterns Essentials” by Tony Bevis.  Go look that up later. 3) At the start, design patterns are not easy.  You can’t learn it properly in a week.  The whole thing is very abstract and you need a certain way of thinking and visualising problems.  Especially if you have been taught a certain way up until now.  But stick with it, as when then penny drops you will feel great, I promise! 4) Design patterns do not solve the world’s problems, there is criticism of them out there.  You should read that too for a balanced view.
 
-Polymorphism, Binding and the Basis of Patterns
+The Basis of Patterns, Polymorphism and Bindings
 -----------------------------------------------
+
+Basis of Patterns
+-----------------
+Design patterns centre on the combination of four OO concepts – abstraction, encapsulation, polymorphism and inheritance.
+
+1. Abstraction – conceptualise the problem before you dive into the OO.  Divide and conquer, partition things into classes and interfaces.
+2. Encapsulation – objects have data, and they have methods.  These are encapsulated with that said object, meaning the complexity and all the detail is hidden.  We use interfaces to allow the object to communicate with other objects (the interface could just mean what public methods there are), and this allows the changeable part to be extracted, which is very common in patterns.
+3. Polymorphism – this is the ability to write code that lets an object call the same method, but produce a different effect.  We can work with different object types and decide on the actual object type at runtime.
+4. Inheritance – where we inherit methods and data from another class.  That said, design patterns tend to favour composition (‘has-a’) over inheritance (‘is-a’), discussed in the next section.  Inheritance does enable polymorphism though which allows us to avoid the problems of ‘is-a’.
 
 Polymorphism
 ------------
@@ -25,15 +34,6 @@ We may not know what method is called until runtime.  If we are using a collecti
 Static Binding
 --------------
 This is the simplest approach and resolves all mappings at compile time.  The binding of the message to the function (if you don’t know, a method in Java is called a function in C) being called is achieved at compile time e.g. when using C or Pascal.  On the upside, this means there is no runtime overhead in accessing functions/methods, and the compiler guarantees completeness as failed bindings are caught at compile time.  But static bindings cannot chance without re-compilation therefore there is little support for code evolution.
-
-Basis of Patterns
------------------
-Design patterns centre on the combination of four OO concepts – abstraction, encapsulation, polymorphism and inheritance.
-
-1. Abstraction – conceptualise the problem before you dive into the OO.  Divide and conquer, partition things into classes and interfaces.
-2. Encapsulation – objects have data, and they have methods.  These are encapsulated with that said object, meaning the complexity and all the detail is hidden.  We use interfaces to allow the object to communicate with other objects (the interface could just mean what public methods there are), and this allows the changeable part to be extracted, which is very common in patterns.
-3. Polymorphism – this is the ability to write code that lets an object call the same method, but produce a different effect.  We can work with different object types and decide on the actual object type at runtime.
-4. Inheritance – where we inherit methods and data from another class.  That said, design patterns tend to favour composition (‘has-a’) over inheritance (‘is-a’), discussed in the next section.  Inheritance does enable polymorphism though which allows us to avoid the problems of ‘is-a’.
 
 SOLID Principles Overview
 -------------------------
