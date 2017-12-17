@@ -25,7 +25,7 @@ We may not know what method is called until runtime.  If we are using a collecti
 Static Binding
 --------------
 This is the simplest approach and resolves all mappings at compile time.  The binding of the message to the function (if you don’t know, a method in Java is called a function in C) being called is achieved at compile time e.g. when using C or Pascal.  On the upside, this means there is no runtime overhead in accessing functions/methods, and the compiler guarantees completeness as failed bindings are caught at compile time.  But static bindings cannot chance without re-compilation therefore there is little support for code evolution.
- 
+
 Basis of Patterns
 -----------------
 Design patterns centre on the combination of four OO concepts – abstraction, encapsulation, polymorphism and inheritance.
