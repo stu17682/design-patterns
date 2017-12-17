@@ -142,13 +142,15 @@ Not applying SRP leads to rigidity and fragility.  Below, the Rectangle class ha
 
 And, in an unrelated code example, the Modem interface has two responsibilities also, again it should only have one.
 
-`public interface Modem
+```java
+public interface Modem
 {
     public void Dial(string phoneNum);	// connection responsibility
     public void Hangup();
     public void Send(char c);	          // communication responsibility
     public char Receive();
-}`
+}
+```
 
 OCP – Open Closed Principle
 ---------------------------
@@ -167,7 +169,8 @@ LSP – Liskov Substitution Principle
 -----------------------------------
 Not applying LSP leads to rigidity.  A useful heuristic is factoring instead of deriving, meaning, as we’ve discussed plenty of times so far, factoring out common behaviour as an abstraction/interface.  Remember subtypes must be substitutable for their base types.  
 
-`public class DrawingTool {
+```java
+public class DrawingTool {
   public void drawShape(Shape s) {
     if (s.type == ShapeType.CIRCLE) {
       System.out.println("I'm drawing a circle");
@@ -177,7 +180,8 @@ Not applying LSP leads to rigidity.  A useful heuristic is factoring instead of 
       System.out.println("It’s not a square or a circle - what do I do?");
       }
   }
-}`
+}
+```
 
 Above, future types of Shape have to be handled.  However, the if statement indicates that we have to determine which subclass has been passed in i.e. they are not substitutable, breaking LSP.  And what if we need a triangle?
 
