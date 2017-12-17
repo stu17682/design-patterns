@@ -3,7 +3,14 @@ Design Principles and Design Patterns (screenshots to be added)
 
 Intro
 -----
-Welcome along!  Thanks for checking this out.  Firstly, a few points 1) before I go near any code, I’ll be describing the thinking behind all this.  Do read through it all properly.  2)  The code will be on the Java tip.  I’ve coded substantially in C++ too but there is no support for, say, interfaces.  So, it hard to port all these design patterns exactly from language to language with ease.  2) a nice book is “Java Design Patterns Essentials” by Tony Bevis.  Go look that up later. 3) At the start, design patterns are not easy.  You can’t learn it properly in a week.  The whole thing is very abstract and you need a certain way of thinking and visualising problems.  Especially if you have been taught a certain way up until now.  But stick with it, as when then penny drops you will feel great, I promise! 4) Design patterns do not solve the world’s problems, there is criticism of them out there.  You should read that too for a balanced view.
+Welcome along!  Thanks for checking this out.  Firstly, a few points:
+
+1. Before I go near any code, I’ll be describing the thinking behind all this.  Do read through it all properly.  
+2. The code will be on the Java tip.  I’ve coded substantially in C++ too but there is no support for, say, interfaces.  So, it hard to port all these design patterns exactly from language to language with ease.
+3. A nice book is “Java Design Patterns Essentials” by Tony Bevis.  Go look that up later.
+4. At the start, design patterns are not easy.  You can’t learn it properly in a week.  The whole thing is very abstract and you need a certain way of thinking and visualising problems.  Especially if you have been taught a certain way up until now.  But stick with it, as when then penny drops you will feel great, I promise!
+
+Design patterns do not solve the world’s problems, there is criticism of them out there.  You should read that too for a balanced view.  And I have to presume you already have some Java and OO understanding.
 
 The Basis of Patterns, Polymorphism and Bindings
 -----------------------------------------------
@@ -147,7 +154,7 @@ public interface Modem
 {
     public void Dial(string phoneNum);	// connection responsibility
     public void Hangup();
-    public void Send(char c);	          // communication responsibility
+    public void Send(char c);	        // communication responsibility
     public char Receive();
 }
 ```
