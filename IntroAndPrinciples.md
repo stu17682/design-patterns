@@ -142,13 +142,13 @@ Not applying SRP leads to rigidity and fragility.  Below, the Rectangle class ha
 
 And, in an unrelated code example, the Modem interface has two responsibilities also, again it should only have one.
 
-  public interface Modem
-  {
-      public void Dial(string phoneNum);	// connection responsibility
-      public void Hangup();
-      public void Send(char c);	          // communication responsibility
-      public char Receive();
-  }
+`public interface Modem
+{
+    public void Dial(string phoneNum);	// connection responsibility
+    public void Hangup();
+    public void Send(char c);	          // communication responsibility
+    public char Receive();
+}`
 
 OCP – Open Closed Principle
 ---------------------------
