@@ -1,7 +1,7 @@
 Abstract Factory Explained
 --------------------------
 
-Abstract Factory is a creational pattern.  It is all about families.  An abstract factory encapsulates a group of individual factories (call them concrete factory) that have a common theme without speficying their concrete classes.  The intent is to separate the details of implementation of a set of objects from their general usage and relies on object composition (remember has-a), as object creation is implemented in methods exposed in the factory interface.  A concrete factory is the location of a concrete class in the code as which objects are constructed.  Then when we want to add a new AbstractProduct (see below), we can do it without changing the code in the base class, we just create another concrete factory.  
+Abstract Factory is a creational pattern.  It is all about families.  An abstract factory encapsulates a group of individual factories (call them concrete factories) that have a common theme without speficying their concrete classes.  The intent is to separate the details of implementation of a set of objects from their general usage and relies on object composition (remember has-a), as object creation is implemented in methods exposed in the factory interface.  A concrete factory is the location of a concrete class in the code as which objects are constructed.  Then when we want to add a new AbstractProduct (see below), we can do it without changing the code in the base class, we just create another concrete factory.  
 
 Here's the UML:
 
