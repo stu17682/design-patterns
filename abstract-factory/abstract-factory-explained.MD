@@ -16,7 +16,8 @@ String whatToMake = "tablet";  // or "mobile"
 AbstractDeviceFactory factory = null;
 
 // Create the correct 'factory'... 
-// an if statement!! What if we need to add a smart TV, or laptops, or wearbles, or...you get the picture, we will need to change this code everytime. Better to use an argument in truth.  Anyhow...
+// an if statement!! What if we need to add a smart TV, or laptops, or wearbles, or...
+// you get the picture, we will need to change this code everytime. Better to use an argument in truth.  Anyhow...
 if (whatToMake.equals("tablet")) { 
 factory = new TabletFactory(); 
 } else { 
@@ -28,7 +29,8 @@ factory = new MobileFactory();
 Shell deviceShell = factory.createShell(); 
 Body deviceBody = factory.createBody(); 
 
-// and we are done.  The client can't access anything apart from the two methods in the instantiated factory, they don't need to know how the stuff is made, they don't care - just get me the parts.
+// and we are done.  The client can't access anything apart from the two methods in the instantiated factory.
+// They don't need to know how the stuff is made, they don't care - just get me the parts.
 ```
 TBC
 
