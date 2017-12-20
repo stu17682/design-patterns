@@ -7,7 +7,7 @@ Here's the UML:
 
 ![Abstract Factory UML](screenshots/abstract1.png "Abstract Factory UML")
 
-Quick example - say AbstractFactory is an AbstractDeviceFactory, and we can make either a mobile phone, or a tablet.  Each have an outer shell, and an inner body.  Imagine MobileFactory makes the mobile phone, with createShell() producing the outer shell, and createBody() producing the inner body.  Then TabletFactory makes the tablet, again with createShell() producing the outer shell, and createBody() producing the inner body.  Recap - MobileFactory (aka ConcreteFactory1) is for mobile phones, TabletFactory (aka ConcreteFactory2) is for tablets.
+Quick example - say AbstractFactory is an AbstractDeviceFactory, and we can make either a mobile phone, or a tablet.  Each has an outer shell, and an inner body.  Imagine MobileFactory makes the mobile phone, with createShell() producing the outer shell, and createBody() producing the inner body.  Then TabletFactory makes the tablet, again with createShell() producing the outer shell, and createBody() producing the inner body.  Recap - MobileFactory (aka ConcreteFactory1) is for mobile phones, TabletFactory (aka ConcreteFactory2) is for tablets.
 
 As a client, say I want a tablet.  We need to instantiate the right factory, which is TabletFactory.  Then we call createShell() which returns the outer shell, and createBody() which returns the inner body, both specifically for a tablet.  We would instantiate MobileFactory if we wanted a mobile phone.  The client program might look like this:
 
