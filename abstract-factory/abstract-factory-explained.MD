@@ -19,10 +19,11 @@ AbstractDeviceFactory factory = null;
 // an if statement!! What if we need to add a smart TV, or laptops, or wearables, or...
 // you get the picture, we will need to change this code everytime. Better to use an argument in truth.  Anyhow...
 if (whatToMake.equals("tablet")) { 
-factory = new TabletFactory(); 
-} else { 
-factory = new MobileFactory();
- 	}
+ factory = new TabletFactory(); 
+} 
+else { 
+ factory = new MobileFactory();
+}
 
 // Create the devices's component parts... 
 // These will either be all tablet parts or all mobile parts. 
